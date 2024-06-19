@@ -31,7 +31,7 @@ const userSchema = mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: "Cart",
   },
-  rol: {
+  role: {
     type: String,
     enum: ["admin", "usuario", "premium"],
     default: "usuario",
@@ -40,7 +40,6 @@ const userSchema = mongoose.Schema({
     token: String,
     expiresAt: Date,
   },
-
   documents: [
     {
       name: String,
